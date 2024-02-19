@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- META TAGS -->
+
+<meta charset="UTF-8">
+<meta property="og:url" content="https://bodyflexapp.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="ZenFit" />
+<meta property="og:description" content="ZenFit" />
+<meta property="og:image" content="https://bodyflexapp.com/" />  
+
+<meta name="description" content="ZenFit">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="ZenFit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<title>ZenFit</title>
+
+<!-- LINKS -->
+
+<link rel="stylesheet" href="scripts/styles.css">
+<link rel="shortcut icon" href="images/fav.png">
+
+<!-- STYLES -->
+
+<style>
+
+* {
+    color: #111111;
+}
+
+body {
+    background: #FFFFFF;
+}
+
+.logo {
+    width: 90px;
+}
+
+.progress {
+    background: #C85A7B;
+}
+
+.bar {
+    background: #F5F5F5;
+}
+
+.option {
+    color: #111111;
+    background: #EEEEEE;
+}
+
+.option:hover {
+    color: #F5F5F5;
+    background: #FF769F;
+}
+
+.loading {
+    background: #EEEEEE;
+}
+
+.loading-title, .loading-text {
+    color: #111111;
+}
+
+.loading-bar-progress {
+    background: #C85A7B;
+    animation: loading-bar 7s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+}
+
+.loading-bar {
+    background: #F5F5F5;
+}
+
+.continue {
+    animation: appear 500ms ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 11s;
+    background: #C85A7B;
+    color: #FFFFFF;
+}
+
+.continue:hover {
+    background: #FF769F;
+    color: #FFFFFF;
+}
+
+@keyframes progress {
+    0%      {width: 86.363636363636%;}
+    100%    {width: 90.909090909091%;}
+}
+
+</style>
+
+</head> 
+<body>
+
+
+<style>
+
+.loading {
+    animation: loading 500ms ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 9s;
+}
+
+.notice {
+    background: linear-gradient(to top right, #FF769F, #FF769F);
+    animation: appear 500ms ease-in;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+}
+
+.notice-title {
+    color: #111111;
+}
+
+.notice-text {
+    color: #111111;
+}
+
+.plan-forecast {
+    color: #111111;
+}
+
+.plan {
+    animation: appear 500ms ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 9.2s;
+}
+
+.planrow {
+    background: linear-gradient(to top right, #F0F0F0, #FBFBFB);
+    border: solid 1px #E5E5E5;
+}
+
+.plancol {
+    border-color: #E5E5E5;
+}
+
+.planbar {
+    background: #EEEEEE;
+}
+
+.planjan {
+    background: linear-gradient(to top, #9b0f0f, #d61414);
+    animation: planjan 1.8s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 9.4s;
+}
+
+.planfev {
+    background: linear-gradient(to top, #9b630f, #d65b14);
+    animation: planfev 1.8s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 9.8s;
+}
+
+.planmar {
+    background: linear-gradient(to top, #0f9b4a, #14d665);
+    animation: planmar 1.8s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 10.2s;
+}
+
+.planabr {
+    background: linear-gradient(to top, #0f9b4a, #14d665);
+    animation: planabr 1.8s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 10.6s;
+}
+
+.planbartitle, .planlabel {
+    color: #111111;
+}
+
+@keyframes planjan {
+    0%      {height: 0px;}
+    100%    {height: 16px;}
+}
+
+@keyframes planfev {
+    0%      {height: 0px;}
+    100%    {height: 32px;}
+}
+
+@keyframes planmar {
+    0%      {height: 0px;}
+    100%    {height: 48px;}
+}
+
+@keyframes planabr {
+    0%      {height: 0px;}
+    100%    {height: 72px;}
+}
+
+</style>
+
+<div class="loading">
+  <div class="content center">
+
+    <div class="loading-bar"><div class="loading-bar-progress"></div></div>
+    <span class="loading-title">Preparando...</span>
+    <span class="loading-text">Estamos finalizando o seu plano<br />exclusivo e personalizado...</span>
+
+  </div>
+</div>
+
+<section style="padding-top: 28px;">
+  <div class="content center">
+
+    	<h1>Seu plano exclusivo.</h1>	<span class="description">Baseado no seu perfil, montamos<br />um protocolo exclusivo pra você.</span>
+    <span class="plan-forecast">Você chegara ao seu objetivo <br /> até <u>março de 2024</u>.</span>
+
+	<div class="plan">
+        <div class="planrow">
+            <div class="plancol">
+
+                <span class="planlabel">Você está<br />aqui agora</span>
+                <div class="planbar">
+                    <div class="planjan"></div>
+                </div>
+                <span class="planbartitle">MÊS 1</span>
+
+            </div>
+            <div class="plancol">
+
+                <span class="planlabel">Primeiros treinos</span>
+                <div class="planbar">
+                    <div class="planfev"></div>
+                </div>
+                <span class="planbartitle">MÊS 2</span>
+
+            </div>
+            <div class="plancol">
+
+                <span class="planlabel">Primeiros resultados</span>
+                <div class="planbar">
+                    <div class="planmar"></div>
+                </div>
+                <span class="planbartitle">MÊS 3</span>
+
+            </div>
+            <div class="plancol" style="margin-right: 0;border: 0;padding: 0;">
+
+                <span class="planlabel">Resultados expressivos</span>
+                <div class="planbar">
+                    <div class="planabr"></div>
+                </div>
+                <span class="planbartitle">MÊS 4</span>
+
+            </div>
+        </div>
+
+        <div class="notice">
+            <span class="notice-title"><img class="notice-icon" src="images/fire.png" />Seu protocolo exclusivo está pronto.</span>
+            <span class="notice-text">Analisamos o seu perfil e criamos um plano personalizado para você. Nossa previsão é que você já terá resultados expressivos até <strong><u>março de 2024</u></strong>.</span>
+        </div>
+
+    </div>
+
+	<a class="continue" href="20.html">Continuar</a>
+
+  </div>
+</section>
+
+
+</body>
+</html>

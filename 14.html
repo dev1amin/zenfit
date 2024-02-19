@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- META TAGS -->
+
+<meta charset="UTF-8">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<title>ZenFit</title>
+
+<!-- LINKS -->
+
+<link rel="stylesheet" href="scripts/styles.css">
+<link rel="shortcut icon" href="images/fav.png">
+
+<!-- STYLES -->
+
+<style>
+
+* {
+    color: #111111;
+}
+
+body {
+    background: #FFFFFF;
+}
+
+.logo {
+    width: 90px;
+}
+
+.progress {
+    background: #C85A7B;
+}
+
+.bar {
+    background: #F5F5F5;
+}
+
+.option {
+    color: #111111;
+    background: #EEEEEE;
+}
+
+.option:hover {
+    color: #F5F5F5;
+    background: #FF769F;
+}
+
+.loading {
+    background: #EEEEEE;
+}
+
+.loading-title, .loading-text {
+    color: #111111;
+}
+
+.loading-bar-progress {
+    background: #C85A7B;
+    animation: loading-bar 7s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+}
+
+.loading-bar {
+    background: #F5F5F5;
+}
+
+.continue {
+    animation: appear 500ms ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 11s;
+    background: #C85A7B;
+    color: #FFFFFF;
+}
+
+.continue:hover {
+    background: #FF769F;
+    color: #FFFFFF;
+}
+
+@keyframes progress {
+    0%      {width: 63.636363636364%;}
+    100%    {width: 68.181818181818%;}
+}
+
+</style>
+
+</head> 
+<body>
+
+
+<style>
+
+.loading {
+    animation: loading 500ms ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 9s;
+}
+
+.graphics {
+    animation: appear 500ms ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 9.2s;
+}
+
+.reportscore, .reportavatar, .graphicsrow {
+    background: linear-gradient(to top right, #F0F0F0, #FBFBFB);
+    border: solid 1px #E5E5E5;
+}
+
+.graphicsbottom {
+    border-color: #E5E5E5;
+}
+
+.graphbar {
+    background: #EEEEEE;
+}
+
+.graphicstitle, .scoretitle {
+    color: #111111;
+}
+
+.reportresult {
+    color: #FFFFFF;
+    background: #FF769F;
+}
+
+.graphics1_progress {
+    background: linear-gradient(to top, #0f9b4a, #14d665);
+    animation: graphics1 1s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 9.4s;
+}
+
+.graphics2_progress {
+    background: linear-gradient(to top, #0f9b4a, #14d665);
+    animation: graphics2 1s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 9.8s;
+}
+
+.graphics3_progress {
+    background: linear-gradient(to top, #9b630f, #d65b14);
+    animation: graphics3 1s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 10.2s;
+}
+
+.graphics4_progress {
+    background: linear-gradient(to top, #9b0f0f, #d61414);
+    animation: graphics4 1s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 10.6s;
+}
+
+.notice {
+    background: linear-gradient(to top right, #FF769F, #FF769F);
+    animation: appear 500ms ease-in;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+}
+
+.notice-title {
+    color: #111111;
+}
+
+.notice-text {
+    color: #111111;
+}
+
+@keyframes graphics1 {
+    0%      {height: 0px;}
+    100%    {height: 71.2px;}
+}
+
+@keyframes graphics2 {
+    0%      {height: 0px;}
+    100%    {height: 68px;}
+}
+
+@keyframes graphics3 {
+    0%      {height: 0px;}
+    100%    {height: 49.6px;}
+}
+
+@keyframes graphics4 {
+    0%      {height: 0px;}
+    100%    {height: 46.4px;}
+}
+
+</style>
+
+<!-- CIRCLE -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="scripts/circle/dist/circle-progress.js"></script>
+
+<!-- /CIRCLE -->
+
+<div class="loading">
+  <div class="content center">
+
+    <div class="loading-bar"><div class="loading-bar-progress"></div></div>
+    <span class="loading-title">Analisando...</span>
+    <span class="loading-text">Estamos analisando as suas<br />respostas e preparando<br />o seu treino...</span>
+
+  </div>
+</div>
+
+<section style="padding-top: 18px;">
+  <div class="content center">
+
+    	<h1>Análise inicial do seu perfil</h1>	
+	<div class="graphics">
+
+        <div class="askrow">
+            <div class="graphicsleft">
+
+                <div class="reportscore">
+                    <span class="scoretitle">SUA PONTUAÇÃO:</span>
+                    <div class="scorebar"><span class="scorelabel"></span></div>
+                </div>
+
+            </div>
+            <div class="graphicsright">
+
+                                                <div class="reportresult">Resultado: Ótimo 🤩</div>
+                <div class="reportavatar">
+                    <img class="reportimage" src="images/mulher_30anos_modelo2.webp" alt="Análise inicial do seu perfil" />                                                                            </div>
+
+            </div>
+        </div>
+
+        <div class="graphicsrow">
+            <div class="graphicsbottom">
+                <div class="graphbar">
+                    <div class="graphics1_progress"><span class="graphicslabel" id="numero">89%</span></div>
+                </div>
+                <span class="graphicstitle">MOTIVAÇÃO</span>
+            </div>
+
+            <div class="graphicsbottom">
+                <div class="graphbar">
+                    <div class="graphics2_progress"><span class="graphicslabel">85%</span></div>
+                </div>
+                <span class="graphicstitle">RESULTADO</span>
+            </div>
+
+            <div class="graphicsbottom">
+                <div class="graphbar">
+                    <div class="graphics3_progress"><span class="graphicslabel">62%</span></div>
+                </div>
+                <span class="graphicstitle">METABOLISMO</span>
+            </div>
+
+            <div class="graphicsbottom" style="margin-right: 0;border: 0;padding: 0;">
+                <div class="graphbar">
+                    <div class="graphics4_progress"><span class="graphicslabel">58%</span></div>
+                </div>
+                <span class="graphicstitle">PREPARO</span>
+            </div>
+        </div>
+
+        <div class="askrow">
+        
+            <div class="notice">
+                <span class="notice-title"><img class="notice-icon" src="images/right.png" />Protocolo de 28 dias quase pronto!</span>
+                <span class="notice-text">De acordo com as suas primeiras respostas, você está pronto para ter resultados incíveis em 28 dias com o nosso plano.</span>
+            </div>
+
+        </div>
+    </div>
+
+	<a class="continue" href="15.html">Continuar</a>
+
+  </div>
+</section>
+
+<script>
+
+/* CIRCLE */
+
+setTimeout(()=>{
+    $('.scorebar').circleProgress({
+        value: 0.79,
+        lineCap: 'round',
+        size: 120,
+        thickness: 16,
+        animationStartValue: 0,
+        startAngle: 4.8,
+        emptyFill: "#EEEEEE",
+        animation: { duration: 3000, easing: "circleProgressEasing" },
+        fill: { gradient: ["#0f9b4a", "#14d665"] }
+    }).on('circle-animation-progress', function(event, progress) {
+        $(this).find('.scorelabel').html(Math.round(79 * progress) + '%');
+    });
+}, 9000);
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- META TAGS -->
+
+<meta charset="UTF-8">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<title>ZenFit</title>
+
+<!-- LINKS -->
+
+<link rel="stylesheet" href="scripts/styles.css">
+<link rel="shortcut icon" href="images/fav.png">
+
+<!-- STYLES -->
+
+<style>
+
+* {
+    color: #111111;
+}
+
+body {
+    background: #FFFFFF;
+}
+
+.logo {
+    width: 90px;
+}
+
+.progress {
+    background: #C85A7B;
+}
+
+.bar {
+    background: #F5F5F5;
+}
+
+.option {
+    color: #111111;
+    background: #EEEEEE;
+}
+
+.option:hover {
+    color: #F5F5F5;
+    background: #FF769F;
+}
+
+.loading {
+    background: #EEEEEE;
+}
+
+.loading-title, .loading-text {
+    color: #111111;
+}
+
+.loading-bar-progress {
+    background: #C85A7B;
+    animation: loading-bar 7s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+}
+
+.loading-bar {
+    background: #F5F5F5;
+}
+
+.continue {
+    animation: appear 500ms ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 11s;
+    background: #C85A7B;
+    color: #FFFFFF;
+}
+
+.continue:hover {
+    background: #FF769F;
+    color: #FFFFFF;
+}
+
+@keyframes progress {
+    0%      {width: 77.272727272727%;}
+    100%    {width: 81.818181818182%;}
+}
+
+</style>
+
+</head> 
+<body>
+
+
+<header>
+  <div class="content center">
+
+    <img class="logo" src="images/zenfitlogo.jpg" alt="ZenFit" />
+
+    <div class="bar">
+        <div class="progress"></div>
+    </div>
+
+  </div>
+</header>
+
+
+<section>
+  <div class="content center">
+
+	<h1>Quanto você costuma beber de água?</h1>	
+	<div class="ask7">
+
+        <div class="askrow">
+	        <a class="option" href="18.html"><img class="askemoji" src="images/Cafe.png" alt="Bebo apenas chá e café" />Bebo apenas chá e café</a>
+	        <a class="option" href="18.html"><img class="askemoji" src="images/2compos.png" alt="Menos que 2 copos de água" />Menos que 2 copos de água</a>
+        </div>
+
+        
+        <div class="askrow">
+	        <a class="option" href="18.html"><img class="askemoji" src="images/5copos.png" alt="De 3 a 6 copos de água" />De 3 a 6 copos de água</a>
+	        <a class="option" href="18.html"><img class="askemoji" src="images/6copos.png" alt="Mais que 10 copos de água" />Mais que 10 copos de água</a>
+        </div>
+
+        
+    </div>
+
+  </div>
+</section>
+
+
+</body>
+</html>
