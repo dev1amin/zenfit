@@ -1142,72 +1142,74 @@ img, a, button, h1, h2, strong, p, span, ul, ol, li {
 	<h1>TREINO DE PILATES NA PAREDE</h1>	<span class="description">DE ACORDO COM SUA IDADE</span>
 	<div class="ask1">
 
-        <div class="field _required" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses" name="shippingAddress.firstname">
+        <div style="display: flex; width: 100%;">
+            <div style="width: 50% !important;" class="field _required" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses" name="shippingAddress.firstname">
 
-            <label class="label" data-bind="attr: { for: element.uid }" for="JJDGH83"><!-- ko if: element.label --><span data-bind="i18n: element.label">Nome</span><!-- /ko --></label>
-        
-            <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
-                <!-- ko ifnot: element.hasAddons() -->
-                    <!-- ko template: element.elementTmpl -->
-        <input autocomplete="nope" class="input-text" type="text" data-bind="
-            value: value,
-            valueUpdate: 'keyup',
-            hasFocus: focused,
-            attr: {
-                name: inputName,
-                placeholder: placeholder,
-                'aria-describedby': getDescriptionId(),
-                'aria-required': required,
-                'aria-invalid': error() ? true : 'false',
-                id: uid,
-                disabled: disabled
-            }" name="firstname" aria-required="true" aria-invalid="false" id="JJDGH83" placeholder="Nome *">
-        <!-- /ko -->
-                <!-- /ko -->
-        
-                <!-- ko if: element.hasAddons() --><!-- /ko -->
-        
-                <!-- ko if: element.tooltip --><!-- /ko -->
-        
-                <!-- ko if: element.notice --><!-- /ko -->
-        
-                <!-- ko if: element.error() --><!-- /ko -->
-        
-                <!-- ko if: element.warn() --><!-- /ko -->
+                <label class="label" data-bind="attr: { for: element.uid }" for="JJDGH83"><!-- ko if: element.label --><span data-bind="i18n: element.label">Nome</span><!-- /ko --></label>
+            
+                <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+                    <!-- ko ifnot: element.hasAddons() -->
+                        <!-- ko template: element.elementTmpl -->
+            <input autocomplete="nope" class="input-text" type="text" data-bind="
+                value: value,
+                valueUpdate: 'keyup',
+                hasFocus: focused,
+                attr: {
+                    name: inputName,
+                    placeholder: placeholder,
+                    'aria-describedby': getDescriptionId(),
+                    'aria-required': required,
+                    'aria-invalid': error() ? true : 'false',
+                    id: uid,
+                    disabled: disabled
+                }" name="firstname" aria-required="true" aria-invalid="false" id="JJDGH83" placeholder="Nome *">
+            <!-- /ko -->
+                    <!-- /ko -->
+            
+                    <!-- ko if: element.hasAddons() --><!-- /ko -->
+            
+                    <!-- ko if: element.tooltip --><!-- /ko -->
+            
+                    <!-- ko if: element.notice --><!-- /ko -->
+            
+                    <!-- ko if: element.error() --><!-- /ko -->
+            
+                    <!-- ko if: element.warn() --><!-- /ko -->
+                </div>
             </div>
-        </div>
-        <div class="field _required" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses" name="shippingAddress.lastname">
+            <div style="width: 50% !important;" class="field _required" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses" name="shippingAddress.lastname">
 
-            <label class="label" data-bind="attr: { for: element.uid }" for="KLLH183"><!-- ko if: element.label --><span data-bind="i18n: element.label">Sobrenome</span><!-- /ko --></label>
-        
-            <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
-                <!-- ko ifnot: element.hasAddons() -->
-                    <!-- ko template: element.elementTmpl -->
-        <input autocomplete="nope" class="input-text" type="text" data-bind="
-            value: value,
-            valueUpdate: 'keyup',
-            hasFocus: focused,
-            attr: {
-                name: inputName,
-                placeholder: placeholder,
-                'aria-describedby': getDescriptionId(),
-                'aria-required': required,
-                'aria-invalid': error() ? true : 'false',
-                id: uid,
-                disabled: disabled
-            }" name="lastname" aria-required="true" aria-invalid="false" id="KLLH183" placeholder="Sobrenome *">
-        <!-- /ko -->
-                <!-- /ko -->
-        
-                <!-- ko if: element.hasAddons() --><!-- /ko -->
-        
-                <!-- ko if: element.tooltip --><!-- /ko -->
-        
-                <!-- ko if: element.notice --><!-- /ko -->
-        
-                <!-- ko if: element.error() --><!-- /ko -->
-        
-                <!-- ko if: element.warn() --><!-- /ko -->
+                <label class="label" data-bind="attr: { for: element.uid }" for="KLLH183"><!-- ko if: element.label --><span data-bind="i18n: element.label">Sobrenome</span><!-- /ko --></label>
+            
+                <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+                    <!-- ko ifnot: element.hasAddons() -->
+                        <!-- ko template: element.elementTmpl -->
+            <input autocomplete="nope" class="input-text" type="text" data-bind="
+                value: value,
+                valueUpdate: 'keyup',
+                hasFocus: focused,
+                attr: {
+                    name: inputName,
+                    placeholder: placeholder,
+                    'aria-describedby': getDescriptionId(),
+                    'aria-required': required,
+                    'aria-invalid': error() ? true : 'false',
+                    id: uid,
+                    disabled: disabled
+                }" name="lastname" aria-required="true" aria-invalid="false" id="KLLH183" placeholder="Sobrenome *">
+            <!-- /ko -->
+                    <!-- /ko -->
+            
+                    <!-- ko if: element.hasAddons() --><!-- /ko -->
+            
+                    <!-- ko if: element.tooltip --><!-- /ko -->
+            
+                    <!-- ko if: element.notice --><!-- /ko -->
+            
+                    <!-- ko if: element.error() --><!-- /ko -->
+            
+                    <!-- ko if: element.warn() --><!-- /ko -->
+                </div>
             </div>
         </div>
 
