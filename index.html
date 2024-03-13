@@ -1188,7 +1188,6 @@ img, a, button, h1, h2, strong, p, span, ul, ol, li {
                 value: value,
                 valueUpdate: 'keyup',
                 hasFocus: focused,
-                onFocus="window.scrollTo(0, 0);",
                 attr: {
                     name: inputName,
                     placeholder: placeholder,
@@ -1234,4 +1233,20 @@ img, a, button, h1, h2, strong, p, span, ul, ol, li {
 
 
 </body>
+<script>
+    $(document).on('touchstart', 'textarea, input[type=text], input[type=date], input[type=password], input[type=email], input[type=number]', function(e){
+        var intv = 100;
+        var $obj = $(this);
+        
+        if (getMobileOperatingSystem() == 'ios') {
+
+            e.stopPropagation();
+
+            $obj.css({'transform': 'TranslateY(-10000px)'}).focus();
+            
+            setTimeout(function(){$obj.css({'transform': 'none'}); }, intv);
+        }
+        return true;
+    });
+</script>
 </html>
