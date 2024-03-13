@@ -1150,7 +1150,7 @@ img, a, button, h1, h2, strong, p, span, ul, ol, li {
                 <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
                     <!-- ko ifnot: element.hasAddons() -->
                         <!-- ko template: element.elementTmpl -->
-            <input autocomplete="nope" class="input-text" type="text" data-bind="
+            <input onFocus="window.scrollTo(0, 0);" autocomplete="nope" class="input-text" type="text" data-bind="
                 value: value,
                 valueUpdate: 'keyup',
                 hasFocus: focused,
